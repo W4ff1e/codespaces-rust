@@ -1,10 +1,10 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-    "ghcr.io/devcontainers/features/rust:1": {}
+    "ghcr.io/devcontainers/features/rust:latest": {}
   },
   "hostRequirements": {
-    "cpus": 4
+    "cpus": 2
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "cargo build",
@@ -31,5 +31,7 @@
       ]
     }
   },
-  "forwardPorts": [8888]
+  "forwardPorts": [
+    8888
+  ]
 }
